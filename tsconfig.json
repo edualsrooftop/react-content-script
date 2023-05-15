@@ -12,10 +12,11 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "content-script/src"],
+  "include": ["popup/src", "content-script/src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

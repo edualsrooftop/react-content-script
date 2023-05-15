@@ -1,13 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import "./main.css";
 import App from "./App";
+import "./main.css";
 
 const body = document.querySelector("body");
 
 const app = document.createElement("div");
 
-app.id = "root";
+app.id = "stash-root";
 
 // Make sure the element that you want to mount the app to has loaded. You can
 // also use `append` or insert the app using another method:
@@ -19,7 +19,7 @@ if (body) {
   body.prepend(app);
 }
 
-const container = document.getElementById("root");
+const container = document.getElementById("stash-root");
 const root = createRoot(container!);
 
 root.render(
