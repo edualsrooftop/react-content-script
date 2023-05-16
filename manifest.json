@@ -16,7 +16,11 @@
     {
       "matches": ["http://*/*", "https://*/*", "<all_urls>"],
       "js": ["content-script/src/main.tsx"],
-      "media": []
+      "media": ["content-script/src/main.css"]
     }
+  ],
+  "permissions": [
+    "http://fonts.googleapis.com/",
+    "https://fonts.googleapis.com/"
   ]
 }

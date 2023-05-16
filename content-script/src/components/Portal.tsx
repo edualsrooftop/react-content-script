@@ -6,8 +6,9 @@ export function Portal({ children }: { children: React.ReactNode }) {
 
     useEffect(() => {
         if (window.document) {
-            const portal = document.getElementById("__next");
+            const portal = document.getElementById("App");
             const el = document.createElement("div");
+            el.className = "portal"
             portal?.appendChild(el);
             setEl(el);
             return () => {
