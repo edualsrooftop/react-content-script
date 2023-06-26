@@ -1,14 +1,16 @@
 /// <reference types="chrome" />
 /// <reference types="vite-plugin-svgr/client" />
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Drawer from "./components/Drawer";
 import { useAppStore } from "./store.js";
 import { chromeFetch } from "./utils.js";
 
+
 function App() {
   const app = useAppStore();
+
   useEffect(() => {
     chromeFetch(
       { url: "https://stashproperty.com.au/app/api/config", method: "get" },
@@ -17,6 +19,7 @@ function App() {
       }
     );
   }, []);
+
   return (
     <div id="App" className="z-top text-gray-900">
       <button

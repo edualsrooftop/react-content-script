@@ -20,7 +20,6 @@
     }
   ],
   "permissions": [
-    "http://fonts.googleapis.com/",
-    "https://fonts.googleapis.com/"
+    
   ]
 }
